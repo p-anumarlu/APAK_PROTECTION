@@ -1,0 +1,39 @@
+{
+    "manifest_version": 3,
+    "name": "APAK Protection",
+    "version": "1.0",
+    "description": "Detects phishing, SQL injections, XSS, and CSRF vulnerabilities.",
+    "permissions": [
+      "activeTab",
+      "tabs",
+      "scripting",
+      "storage",
+      "declarativeNetRequest",
+      "declarativeNetRequestWithHostAccess"
+    ],
+    "icons": {
+      "48": "image48.png"
+    },
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"] 
+      }
+    ],
+    "host_permissions": [
+      "https://*/*",
+      "http://*/*"
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["warning.html", "warning.js"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }

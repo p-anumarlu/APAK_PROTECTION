@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <title>APAK PROTECTION</title>
+    <style>
+      body {
+        width: 300px;
+        padding: 10px;
+        font-family: "Orbitron", sans-serif;
+        margin: 0;
+        background-color: rgb(224, 224, 224);
+      }
+      h3 {
+        text-align: center;
+      }
+      input {
+        width: 100%;
+        padding: 8px;
+        margin: 10px 0;
+        box-sizing: border-box;
+        font-family: inherit;
+        font-size: 14px;
+      }
+      button {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        z-index: 1;
+        position: relative;
+        font-size: inherit;
+        font-family: inherit;
+        color: white;
+        outline: none;
+        background-color: rgb(39, 110, 192);
+        overflow: hidden;
+        transition: color 0.4s ease-in-out;
+      }
+      button::before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        background-color: #3cefff;
+        transform-origin: center;
+        transform: translate3d(-50%, -50%, 0) scale3d(0, 0, 0);
+        transition: transform 0.45s ease-in-out;
+      }
+      button:hover {
+        cursor: pointer;
+        color: #161616;
+      }
+      button:hover::before {
+        transform: translate3d(-50%, -50%, 0) scale3d(15, 15, 15);
+      }
+    </style>
+  </head>
+  <body>
+    <h3>APAK PROTECTION</h3>
+    <input type="text" id="urlInput" placeholder="Enter a URL to check">
+    <button id="checkUrl">Check This URL</button>
+    <button id="testSQL">Test SQL Injection</button>
+    <button id="testXSS">Test XSS</button>
+    <button id="detectCSRF">Detect CSRF</button>
+    <script src="popup.js"></script>
+  </body>
+</html>
