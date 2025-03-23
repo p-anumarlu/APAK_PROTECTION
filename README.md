@@ -70,8 +70,4 @@ We used multiple websites created precreated as a sandbox to test our extension 
 Conclusion:
 APAK Protection is a strong but easy program that allows you to surf the internet safely. We believe APAK Protection would encourage other people to be proactively involved in protecting themselves and their data on the internet.
 
-Team Members:
-Aahan Nellutla
-Pranav Anumarlu
-Anish Rangarajan
-Krish Bhardwaj
+Team Members: Aahan Nellutla, Pranav Anumarlu, Anish Rangarajan, Krish Bhardwaj
